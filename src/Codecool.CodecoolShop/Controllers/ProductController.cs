@@ -24,10 +24,15 @@ namespace Codecool.CodecoolShop.Controllers
                 ProductDaoMemory.GetInstance(),
                 ProductCategoryDaoMemory.GetInstance());
         }
-
         public IActionResult Index()
         {
-            var products = ProductService.GetProductsForCategory(1);
+            var products = ProductService.GetProductsForAllCategory();
+            return View(products.ToList());
+        }
+        [HttpGet("{id}")]
+        public IActionResult Filtered(int id)
+        {
+            var products = ProductService.GetProductsForCategory(id);
             return View(products.ToList());
         }
 
