@@ -25,14 +25,18 @@ namespace Codecool.CodecoolShop.Controllers
                 ProductCategoryDaoMemory.GetInstance());
         }
 
-        public IActionResult Index()
-        {   
+
+        public IActionResult Index(int count)
+        {
             var products = ProductService.GetProductsForAllCategory();
             return View(products.ToList());
         }
-        public IActionResult Filtered()
+
+
+        [HttpGet("{count}")]
+        public IActionResult Filtered(int count)
         {   
-            var products = ProductService.GetProductsForCategory(1);
+            var products = ProductService.GetProductsForCategory(count);
             return View(products.ToList());
         }
 
