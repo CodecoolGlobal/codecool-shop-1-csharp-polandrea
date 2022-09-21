@@ -33,6 +33,7 @@
                     <p class="card-text">Supplier: @element.Supplier.Name</p>
                     <p class="card-text text-center"><strong>Price: @element.DefaultPrice.ToString("C2")</strong></p>
                     <a href="" type="button" class="btn btn-primary" style="float: bottom">Add To Cart</a>
+                    <input id="cart-button" data-id="@element.Id" type="submit" name="productId" value="Add To Cart" class="btn btn-success" />
                 </div>
             </div>
         </div>
@@ -40,3 +41,5 @@
 
 
 </div>
+
+<script defer src="~/js/filtered.js" asp-append-version="true"></script>
