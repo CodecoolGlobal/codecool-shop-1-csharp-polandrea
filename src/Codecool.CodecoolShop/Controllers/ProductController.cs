@@ -26,7 +26,12 @@ namespace Codecool.CodecoolShop.Controllers
         }
 
         public IActionResult Index()
-        {
+        {   
+            var products = ProductService.GetProductsForAllCategory();
+            return View(products.ToList());
+        }
+        public IActionResult Filtered()
+        {   
             var products = ProductService.GetProductsForCategory(1);
             return View(products.ToList());
         }
