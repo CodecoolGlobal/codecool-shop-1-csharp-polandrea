@@ -4,6 +4,7 @@
 
 @model List<Codecool.CodecoolShop.Models.Product>
 
+
 <div>
     <ul>
         <li><a href="1">Tablet</a></li>
@@ -32,7 +33,9 @@
                     <p class="card-text">Category: @element.ProductCategory.Department</p>
                     <p class="card-text">Supplier: @element.Supplier.Name</p>
                     <p class="card-text text-center"><strong>Price: @element.DefaultPrice.ToString("C2")</strong></p>
-                    <a href="" type="button" class="btn btn-primary" style="float: bottom">Add To Cart</a>
+                    <a href="" type="button" class="btn btn-primary" value="@element.Id" style="float: bottom">Add To Cart</a>
+                    <input id="cart-button" data-id="@element.Id" type="submit" name="productId" value="Add To Cart" class="btn btn-success" />
+
                 </div>
             </div>
         </div>
@@ -40,3 +43,5 @@
 
 
 </div>
+
+<script defer src="~/js/cart.js" asp-append-version="true"></script>
