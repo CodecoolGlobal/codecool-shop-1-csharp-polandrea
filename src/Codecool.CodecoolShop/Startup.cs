@@ -84,10 +84,15 @@ namespace Codecool.CodecoolShop
             productDataStore.Add(new Product { Name = "Lamb", DefaultPrice = 5000m, Currency = "HUF", Description = "Adorable white lamb with a polaroid camera. Approximately 14 cm", ProductCategory = Dolls, Supplier = Andi });
             productDataStore.Add(new Product { Name = "Fox", DefaultPrice = 5000m, Currency = "HUF", Description = "Ornange fox with a light blue collar. Approximately 14 cm", ProductCategory = Dolls, Supplier = Andi });
             productDataStore.Add(new Product { Name = "Stag", DefaultPrice = 5000m, Currency = "HUF", Description = "Oh my dear, what a stag! Handsome stag with little boots. Approximately 16 cm", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Banana", DefaultPrice = 500m, Currency = "HUF", Description = "It's a banana, that's all.", ProductCategory = Food, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Acorn", DefaultPrice = 500m, Currency = "HUF", Description = "Acorn. It's not a corn but just an acorn.", ProductCategory = Food, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Radish", DefaultPrice = 500m, Currency = "HUF", Description = "Radish with a leaf, it's quite cute.", ProductCategory = Food, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Tea", DefaultPrice = 500m, Currency = "HUF", Description = "A hot cup of tea for your dolls.", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Banana", DefaultPrice = 500m, Currency = "HUF", Description = "It's a banana, that's all", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Acorn", DefaultPrice = 500m, Currency = "HUF", Description = "Acorn. It's not a corn but just an acorn", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Radish", DefaultPrice = 500m, Currency = "HUF", Description = "Radish with a leaf, it's quite cute", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Tea", DefaultPrice = 500m, Currency = "HUF", Description = "A hot cup of tea for your dolls", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Coat", DefaultPrice = 1500m, Currency = "HUF", Description = "Nice blue coat for colder days", ProductCategory = Clothes, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Hat", DefaultPrice = 1000m, Currency = "HUF", Description = "Nice beach hat, ideal for the summer", ProductCategory = Clothes, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Cap", DefaultPrice = 500m, Currency = "HUF", Description = "A red baseball cap", ProductCategory = Clothes, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Beret", DefaultPrice = 1000m, Currency = "HUF", Description = "A beret for an artistic doll", ProductCategory = Clothes, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Crown", DefaultPrice = 500m, Currency = "HUF", Description = "A crown for your princess doll", ProductCategory = Clothes, Supplier = Andi });
         }
     }
 }
