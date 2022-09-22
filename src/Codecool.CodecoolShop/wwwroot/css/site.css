@@ -69,3 +69,14 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.filter
+{
+  margin-right: 25px;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgb(0 0 0 / 8%);
+  border-radius: 25%;
+  border-width: thin;
+  padding: 5px;
+}
