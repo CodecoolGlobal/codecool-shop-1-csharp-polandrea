@@ -77,13 +77,17 @@ namespace Codecool.CodecoolShop
             productCategoryDataStore.Add(Food);
 
 
-            productDataStore.Add(new Product { Name = "Otter", DefaultPrice = 5000m, Currency = "HUF", Description = "Cute little otter, brown fur with white details. Approximately 15 cm.", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Koala", DefaultPrice = 5000m, Currency = "HUF", Description = "Gray koala with big feet. Approximately 12 cm.", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Seahorse", DefaultPrice = 5000m, Currency = "HUF", Description = "Sand colored seahorse. Approximately 14 cm.", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Mermaid", DefaultPrice = 10000m, Currency = "HUF", Description = "Colored-skinned mermaid, with curly hair and a little bow. Just in time for the new movie. Approximately 25 cm.", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Lamb", DefaultPrice = 5000m, Currency = "HUF", Description = "Adorable white lamb with a polaroid camera. Approximately 14 cm.", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Fox", DefaultPrice = 5000m, Currency = "HUF", Description = "Ornange fox with a light blue collar. Approximately 14 cm.", ProductCategory = Dolls, Supplier = Andi });
-            productDataStore.Add(new Product { Name = "Stag", DefaultPrice = 5000m, Currency = "HUF", Description = "Oh my dear, what a stag! Handsome stag with little boots. Approximately 16 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Otter", DefaultPrice = 5000m, Currency = "HUF", Description = "Cute little otter, brown fur with white details. Approximately 15 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Koala", DefaultPrice = 5000m, Currency = "HUF", Description = "Gray koala with big feet. Approximately 12 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Seahorse", DefaultPrice = 5000m, Currency = "HUF", Description = "Sand colored seahorse. Approximately 14 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Mermaid", DefaultPrice = 10000m, Currency = "HUF", Description = "Colored-skinned mermaid, with curly hair and a little bow. Just in time for the new movie. Approximately 25 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Lamb", DefaultPrice = 5000m, Currency = "HUF", Description = "Adorable white lamb with a polaroid camera. Approximately 14 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Fox", DefaultPrice = 5000m, Currency = "HUF", Description = "Ornange fox with a light blue collar. Approximately 14 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Stag", DefaultPrice = 5000m, Currency = "HUF", Description = "Oh my dear, what a stag! Handsome stag with little boots. Approximately 16 cm", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Banana", DefaultPrice = 500m, Currency = "HUF", Description = "It's a banana, that's all.", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Acorn", DefaultPrice = 500m, Currency = "HUF", Description = "Acorn. It's not a corn but just an acorn.", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Radish", DefaultPrice = 500m, Currency = "HUF", Description = "Radish with a leaf, it's quite cute.", ProductCategory = Food, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Tea", DefaultPrice = 500m, Currency = "HUF", Description = "A hot cup of tea for your dolls.", ProductCategory = Food, Supplier = Andi });
         }
     }
 }
