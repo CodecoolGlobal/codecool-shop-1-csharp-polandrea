@@ -86,7 +86,9 @@ body {
   padding: 5px;
 }
 
+.btn,
 #cart-button
 {
   background: #e87272;
+  border-color: ba5e5e;
 }
