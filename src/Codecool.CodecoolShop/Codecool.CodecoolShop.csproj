@@ -4,4 +4,11 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\img\Amazon Fire HD 8.jpg" />
+    <Content Remove="wwwroot\img\Amazon Fire.jpg" />
+    <Content Remove="wwwroot\img\BestPC.jpg" />
+    <Content Remove="wwwroot\img\Lenovo IdeaPad Miix 700.jpg" />
+  </ItemGroup>
+
 </Project>

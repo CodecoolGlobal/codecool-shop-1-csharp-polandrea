@@ -65,24 +65,25 @@ namespace Codecool.CodecoolShop
             IProductCategoryDao productCategoryDataStore = ProductCategoryDaoMemory.GetInstance();
             ISupplierDao supplierDataStore = SupplierDaoMemory.GetInstance();
 
-            Supplier amazon = new Supplier{Name = "Amazon", Description = "Digital content and services"};
-            supplierDataStore.Add(amazon);
-            Supplier lenovo = new Supplier{Name = "Lenovo", Description = "Computers"};
-            supplierDataStore.Add(lenovo);
-            ProductCategory tablet = new ProductCategory {Name = "Tablet", Department = "Hardware", Description = "A tablet computer, commonly shortened to tablet, is a thin, flat mobile computer with a touchscreen display." };
-            productCategoryDataStore.Add(tablet);
-            ProductCategory pc = new ProductCategory {Name = "PC", Department = "Hardware", Description = "A persona computer." };
-            productCategoryDataStore.Add(pc);
-            ProductCategory toy = new ProductCategory { Name = "TOY", Department = "Hardware", Description = "A persona toy." };
-            productCategoryDataStore.Add(toy);
+            Supplier Andi = new Supplier{Name = "Andi", Description = "Codecoolers who can crochet."};
+            supplierDataStore.Add(Andi);
+            Supplier NotAndi = new Supplier{Name = "Not Andi", Description = "IDK"};
+            supplierDataStore.Add(NotAndi);
+            ProductCategory Dolls = new ProductCategory {Name = "Dolls", Department = "Crocheted", Description = "Handmade crocheted dolls for children." };
+            productCategoryDataStore.Add(Dolls);
+            ProductCategory Clothes = new ProductCategory {Name = "Clothes", Department = "Crocheted", Description = "Handmade crocheted clothes for dolls." };
+            productCategoryDataStore.Add(Clothes);
+            ProductCategory Food = new ProductCategory { Name = "Food", Department = "Crocheted", Description = "Handmade crocheted food items for your dolls." };
+            productCategoryDataStore.Add(Food);
 
 
-            productDataStore.Add(new Product { Name = "Amazon Fire", DefaultPrice = 49.9m, Currency = "USD", Description = "Fantastic price. Large content ecosystem. Good parental controls. Helpful technical support.", ProductCategory = tablet, Supplier = amazon, HowManyIsInCart = 0});
-            productDataStore.Add(new Product { Name = "Lenovo IdeaPad Miix 700", DefaultPrice = 479.0m, Currency = "USD", Description = "Keyboard cover is included. Fanless Core m5 processor. Full-size USB ports. Adjustable kickstand.", ProductCategory = tablet, Supplier = lenovo, HowManyIsInCart = 0 });
-            productDataStore.Add(new Product { Name = "Lenovo IdeaPad Miix 700", DefaultPrice = 479.0m, Currency = "USD", Description = "Keyboard cover is included. Fanless Core m5 processor. Full-size USB ports. Adjustable kickstand.", ProductCategory = tablet, Supplier = lenovo, HowManyIsInCart = 0 });
-            productDataStore.Add(new Product { Name = "Amazon Fire HD 8", DefaultPrice = 89.0m, Currency = "USD", Description = "Amazon's latest Fire HD 8 tablet is a great value for media consumption.", ProductCategory = toy, Supplier = amazon, HowManyIsInCart = 0 });
-            productDataStore.Add(new Product { Name = "Amazon Fire HD 8", DefaultPrice = 89.0m, Currency = "USD", Description = "Amazon's latest Fire HD 8 tablet is a great value for media consumption.", ProductCategory = toy, Supplier = amazon, HowManyIsInCart = 0 });
-            productDataStore.Add(new Product { Name = "BestPC", DefaultPrice = 89.0m, Currency = "USD", Description = "Amazon's latest Fire HD 8 tablet is a great value for media consumption.", ProductCategory = pc, Supplier = amazon, HowManyIsInCart = 0 });
+            productDataStore.Add(new Product { Name = "Otter", DefaultPrice = 5000m, Currency = "HUF", Description = "Cute little otter, brown fur with white details. Approximately 15 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Koala", DefaultPrice = 5000m, Currency = "HUF", Description = "Gray koala with big feet. Approximately 12 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Seahorse", DefaultPrice = 5000m, Currency = "HUF", Description = "Sand colored seahorse. Approximately 14 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Mermaid", DefaultPrice = 10000m, Currency = "HUF", Description = "Colored-skinned mermaid, with curly hair and a little bow. Just in time for the new movie. Approximately 25 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Lamb", DefaultPrice = 5000m, Currency = "HUF", Description = "Adorable white lamb with a polaroid camera. Approximately 14 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Fox", DefaultPrice = 5000m, Currency = "HUF", Description = "Ornange fox with a light blue collar. Approximately 14 cm.", ProductCategory = Dolls, Supplier = Andi });
+            productDataStore.Add(new Product { Name = "Stag", DefaultPrice = 5000m, Currency = "HUF", Description = "Oh my dear, what a stag! Handsome stag with little boots. Approximately 16 cm.", ProductCategory = Dolls, Supplier = Andi });
         }
     }
 }
