@@ -16,11 +16,8 @@ a.navbar-brand {
 a {
   color: #dc3545;
 }
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+a:hover {
+  color: darkred;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -87,8 +84,16 @@ body {
 }
 
 .btn,
+.btn-primary,
 #cart-button
 {
   background: #e87272;
-  border-color: ba5e5e;
+  border-color: #ba5e5e;
+}
+.btn:hover,
+.btn-primary:hover,
+#cart-button:hover
+{
+  background: #ba5e5e;
+  border-color: darkred;
 }
