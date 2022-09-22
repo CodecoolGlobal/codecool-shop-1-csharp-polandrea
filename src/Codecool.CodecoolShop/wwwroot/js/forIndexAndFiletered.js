@@ -9,6 +9,7 @@ for (let i of addButtons) {
         apiPost("/api/AddToCart", i.dataset.id)
         productNumbers += 1;
         navCartButton.innerHTML = `Cart (${productNumbers})`
+        addedToCart()
                         
     })
 }
@@ -28,4 +29,9 @@ async function apiPost(url, payload) {
         body: JSON.stringify(payload),
     })
     return await data.json()
+}
+
+
+function addedToCart() {
+    alert("Item is added to Cart!");
 }
