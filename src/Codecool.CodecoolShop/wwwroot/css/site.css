@@ -85,15 +85,26 @@ body {
 
 .btn,
 .btn-primary,
-#cart-button
+#cart-button,
+#cart-remove-button
 {
   background: #e87272;
   border-color: #ba5e5e;
 }
 .btn:hover,
 .btn-primary:hover,
-#cart-button:hover
+#cart-button:hover,
+#cart-remove-button:hover
 {
   background: #ba5e5e;
+  border-color: darkred;
+}
+.btn:active,
+.btn-primary:active,
+#cart-button:active,
+#cart-remove-button:active,
+.btn-primary:not(:disabled):not(.disabled):active
+{
+  background: darkred;
   border-color: darkred;
 }
