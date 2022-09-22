@@ -58,7 +58,7 @@ namespace Codecool.CodecoolShop.Controllers
 
         [Route("/api/AddToCart")]
         [HttpPost]
-        public JsonResult AddToCart([FromBody]int productId)
+        public JsonResult AddToCart([FromBody] int productId)
         {
 
             var products = ProductService.GetProductsForAllCategory();
@@ -70,6 +70,7 @@ namespace Codecool.CodecoolShop.Controllers
                     product.HowManyIsInCart += 1;
                 }
             }
+
             return Json("");
         }
 
@@ -90,9 +91,45 @@ namespace Codecool.CodecoolShop.Controllers
                     }
                 }
             }
+
             return Json("");
+        }
+
+
+        [Route("/api/GetNumberOfItemsInCart")]
+        [HttpGet]
+        public int GetNumberOfItemsInCart()
+        {
+            var number = 0;
+            var products = ProductService.GetProductsForAllCategory();
+
+            foreach (var product in products)
+            {
+                number += product.HowManyIsInCart;
+            }
+
+
+            return number;
+        }
+
+
+        [Route("/api/GetItemsPrice")]
+        [HttpGet]
+        public double GetItemsPrice()
+        {
+            var number = 0.0;
+            var products = ProductService.GetProductsForAllCategory();
+
+            foreach (var product in products)
+            {
+                number += product.HowManyIsInCart * decimal.ToDouble(product.DefaultPrice);
+            }
+
+
+            return number;
         }
 
 
     }
 }
+
