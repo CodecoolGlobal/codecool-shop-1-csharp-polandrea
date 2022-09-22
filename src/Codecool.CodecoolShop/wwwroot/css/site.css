@@ -7,9 +7,14 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.navbar
+{
+  background: #ffbebc;
+}
+
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  color: #dc3545;
 }
 
 .btn-primary {
@@ -79,4 +84,9 @@ body {
   border-radius: 25%;
   border-width: thin;
   padding: 5px;
+}
+
+#cart-button
+{
+  background: #e87272;
 }
