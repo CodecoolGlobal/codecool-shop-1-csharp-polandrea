@@ -7,15 +7,17 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+.navbar
+{
+  background: #ffbebc;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Provide sufficient contrast against white background */
+a {
+  color: #dc3545;
+}
+a:hover {
+  color: darkred;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -79,4 +81,19 @@ body {
   border-radius: 25%;
   border-width: thin;
   padding: 5px;
+}
+
+.btn,
+.btn-primary,
+#cart-button
+{
+  background: #e87272;
+  border-color: #ba5e5e;
+}
+.btn:hover,
+.btn-primary:hover,
+#cart-button:hover
+{
+  background: #ba5e5e;
+  border-color: darkred;
 }
