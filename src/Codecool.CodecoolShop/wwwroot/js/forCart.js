@@ -34,7 +34,7 @@ async function getNumberOfItemsInCart() {
 
 async function updateTotalPrice() {
     currentPrice = await getItemsPrice()
-    priceHolder.innerHTML = `Total price ${currentPrice}`
+    priceHolder.innerHTML = `Total price:  ${currentPrice}`
 }
 
 
