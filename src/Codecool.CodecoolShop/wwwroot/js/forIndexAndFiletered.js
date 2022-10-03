@@ -1,11 +1,11 @@
-﻿var addButtons = document.querySelectorAll("#cart-button");
-var numbers = document.querySelectorAll("#numbers");
-var navCartButton = document.querySelector("#nav-cart-button");
+﻿let addButtons = document.querySelectorAll("#cart-button");
+let numbers = document.querySelectorAll("#numbers");
+let navCartButton = document.querySelector("#nav-cart-button");
 
 
 for (let i of addButtons) {
     i.addEventListener('click', async() => {
-        var productNumbers = await getNumberOfItemsInCart();
+        let productNumbers = await getNumberOfItemsInCart();
         apiPost("/api/AddToCart", i.dataset.id)
         productNumbers += 1;
         navCartButton.innerHTML = `Cart (${productNumbers})`

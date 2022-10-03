@@ -4,6 +4,6 @@
 // Write your JavaScript code.
 
 
-//var model = @Html.Raw(Json.Encode(Model.HowManyIsInCart));
+//let model = @Html.Raw(Json.Encode(Model.HowManyIsInCart));
 
 //console.log(model)

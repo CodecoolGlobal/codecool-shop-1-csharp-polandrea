@@ -1,7 +1,7 @@
-﻿var priceHolder = document.querySelector("#sum-price");
-var removeButtons = document.querySelectorAll("#cart-remove-button");
-var navCartButton = document.querySelector("#nav-cart-button");
-var numbers = document.querySelectorAll("#numbers");
+﻿let priceHolder = document.querySelector("#sum-price");
+let removeButtons = document.querySelectorAll("#cart-remove-button");
+let navCartButton = document.querySelector("#nav-cart-button");
+let numbers = document.querySelectorAll("#numbers");
 
 
 updateTotalPrice()
@@ -9,14 +9,14 @@ updateTotalPrice()
 
 for (let i = 0; i < removeButtons.length; i++) {
     removeButtons[i].addEventListener('click', async () => {
-        var productNumbers = await getNumberOfItemsInCart();
+        let productNumbers = await getNumberOfItemsInCart();
         productNumbers -= 1;
 
         apiPost("/api/DeleteFromCart", removeButtons[i].dataset.id)
         numbers[i].value -= 1;
         updateTotalPrice()
         if (numbers[i].value == 0) {
-            var deleteProduct = document.querySelector(`#product-${removeButtons[i].dataset.id}`);
+            let deleteProduct = document.querySelector(`#product-${removeButtons[i].dataset.id}`);
             deleteProduct.parentNode.removeChild(deleteProduct);
         }
         navCartButton.innerHTML = `Cart (${productNumbers})`
